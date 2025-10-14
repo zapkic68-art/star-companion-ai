@@ -47,13 +47,17 @@ const Index = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-8"
           >
-            <motion.img
-              src={appIcon}
-              alt="星伴云宝"
-              className="w-32 h-32 mx-auto rounded-3xl shadow-2xl"
+            <motion.div
+              className="w-32 h-32 mx-auto bg-white rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden"
               whileHover={{ scale: 1.1, rotate: 5 }}
               transition={{ type: "spring", stiffness: 300 }}
-            />
+            >
+              <img
+                src={appIcon}
+                alt="星伴云宝"
+                className="w-full h-full object-contain"
+              />
+            </motion.div>
           </motion.div>
 
           <motion.h1
@@ -139,7 +143,7 @@ const Index = () => {
           transition={{ duration: 0.6 }}
           className="text-muted-foreground"
         >
-          © 2025 星伴云宝 · 用心陪伴每一天
+          © 2025 星伴云宝 · 越来越懂你的跨次元AI搭子
         </motion.p>
       </footer>
     </div>
