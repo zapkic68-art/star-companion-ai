@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Download, MessageCircle, Sparkles, Heart, Star, Cloud } from "lucide-react";
+import { Download, MessageCircle, Sparkles, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/hero-background.png";
 import appIcon from "@/assets/app-icon.png";
 
 const Index = () => {
@@ -25,48 +25,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-sky-100/50 to-background overflow-hidden">
-      {/* Floating decorative elements */}
-      <motion.div
-        className="fixed top-20 left-10 text-accent opacity-30"
-        animate={{
-          y: [0, -20, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      >
-        <Star className="w-12 h-12" />
-      </motion.div>
-      <motion.div
-        className="fixed top-40 right-20 text-primary opacity-20"
-        animate={{
-          y: [0, -15, 0],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      >
-        <Cloud className="w-16 h-16" />
-      </motion.div>
-      <motion.div
-        className="fixed bottom-40 left-1/4 text-secondary opacity-25"
-        animate={{
-          y: [0, -20, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1,
-        }}
-      >
-        <Sparkles className="w-10 h-10" />
-      </motion.div>
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
         <div className="absolute inset-0 opacity-30">
@@ -102,7 +60,8 @@ const Index = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent"
+            className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent"
+            style={{ backgroundImage: 'linear-gradient(105deg, #5FBDFB, #2D51DE)' }}
           >
             星伴云宝
           </motion.h1>
@@ -125,7 +84,8 @@ const Index = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
+                className="text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
+                style={{ backgroundImage: 'linear-gradient(105deg, #5FBDFB, #2D51DE)' }}
               >
                 <Download className="mr-2 h-5 w-5" />
                 iOS 下载
@@ -134,7 +94,8 @@ const Index = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-secondary to-secondary/80 hover:from-secondary/90 hover:to-secondary/70 text-secondary-foreground px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
+                className="text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
+                style={{ backgroundImage: 'linear-gradient(105deg, #5FBDFB, #2D51DE)' }}
               >
                 <Download className="mr-2 h-5 w-5" />
                 Android 下载
