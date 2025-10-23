@@ -67,7 +67,7 @@ const Index = () => {
             className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent"
             style={{ backgroundImage: 'linear-gradient(50deg, rgb(110, 194, 250), rgb(80, 112, 241))' }}
           >
-            星伴云宝
+            Yunbow
           </motion.h1>
 
           <motion.p
